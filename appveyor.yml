@@ -1,7 +1,8 @@
-image:
-- Visual Studio 2015
-- Visual Studio 2015 - GCE
-
+environment:
+  matrix:
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+    - APPVEYOR_BUILD_WORKER_IMAGE: VISUAL STUDIO 2015 - GCE
+    
 build_script:
 - echo %APPVEYOR_BUILD_WORKER_IMAGE%
 - echo %APPVEYOR_JOB_NUMBER%
